@@ -1,23 +1,26 @@
-
-
-
 import 'package:flutter/material.dart';
-import 'package:dpa/notification_api.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
 
 class Home extends StatefulWidget {
-  const Home({ Key? key }) : super(key: key);
-
-  @override
+  
+@override
+  
   _HomeState createState() => _HomeState();
+  
 }
 
 class _HomeState extends State<Home> {
+  
+  
+  
   @override
+  
+  
+
 
   
   Widget build(BuildContext context) {
+  
     return Scaffold(
       
       body: Container(
@@ -87,9 +90,7 @@ class _HomeState extends State<Home> {
 }
 
 class richtextwidget extends StatelessWidget {
-  const richtextwidget({
-    Key? key,
-  }) : super(key: key);
+  
 
   @override
   Widget build(BuildContext context) {

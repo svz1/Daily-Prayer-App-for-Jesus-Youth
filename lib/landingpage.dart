@@ -1,13 +1,7 @@
-
-
-
-
 import 'package:dpa/Home.dart';
-import 'package:dpa/notification%20scheduler.dart';
-import 'package:dpa/notification_api.dart';
+import 'package:dpa/local%20notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 class landingpage extends StatefulWidget {
   
@@ -27,7 +21,7 @@ class _landingpageState extends State<landingpage> {
       body: PageView(
         children: [
           Home(),
-          scheduler()
+          localnotificationscreen()
         ],
       ),
     );

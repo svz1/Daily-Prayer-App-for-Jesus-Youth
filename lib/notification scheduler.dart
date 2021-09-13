@@ -1,14 +1,10 @@
-
-
-
-import 'package:dpa/Home.dart';
 import 'package:dpa/notification_api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz ;
 import 'package:timezone/data/latest.dart' as tz ;
 
-FlutterLocalNotificationsPlugin notificationsPlugin=FlutterLocalNotificationsPlugin() ;
+// FlutterLocalNotificationsPlugin notificationsPlugin=FlutterLocalNotificationsPlugin() ;
 
 
 class scheduler extends StatefulWidget {
@@ -22,12 +18,12 @@ class scheduler extends StatefulWidget {
 class _schedulerState extends State<scheduler> {
 
   @override
-  void initState() {
-    initialiseSetting();
-    tz.initializeTimeZones() ;
+ // void initState() {
+   // initialiseSetting();
+    //tz.initializeTimeZones() ;
     // TODO: implement initState
-    super.initState();
-  }
+    //super.initState();
+ // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,36 +53,36 @@ class _schedulerState extends State<scheduler> {
     
   }
 
-  Future<void> displaynotification() async{
-        notificationsPlugin.zonedSchedule(
-      0,
-       "Jesus Youth",
-        "Daily Prayer Reminder",
-         tz.TZDateTime.now(tz.local).add(Duration(seconds: 3),),
+  //Future<void> displaynotification() async{
+     //   notificationsPlugin.zonedSchedule(
+   //   0,
+   //    "Jesus Youth",
+   //     "Daily Prayer Reminder",
+    //     tz.TZDateTime.now(tz.local).add(Duration(seconds: 3),),
          
-          NotificationDetails(
-            android:AndroidNotificationDetails('channelId', 'channelName', 'channelDescription') 
-          ),
-           uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
-            androidAllowWhileIdle: true,
-            matchDateTimeComponents: DateTimeComponents.time) ; 
+      //    NotificationDetails(
+     //       android:AndroidNotificationDetails('channelId', 'channelName', 'channelDescription') 
+    //      ),
+     //      uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
+    //        androidAllowWhileIdle: true,
+    //        matchDateTimeComponents: DateTimeComponents.time) ; 
 
            
-  }
+ // }
  
 
 }
 
 
 
-void initialiseSetting() async{
-  var initializeAndroid=AndroidInitializationSettings('jylogo') ; 
-  var initializeSettings=InitializationSettings( android: initializeAndroid) ; 
- await notificationsPlugin.initialize(initializeSettings,
+//void initialiseSetting() async{
+ // var initializeAndroid=AndroidInitializationSettings('jylogo') ; 
+ // var initializeSettings=InitializationSettings( android: initializeAndroid) ; 
+ //await notificationsPlugin.initialize(initializeSettings,
 
 
  
- ) ;  
+// ) ;  
 
-}
+//}
 

@@ -9,7 +9,7 @@ import 'package:dpa/Home.dart';
 
 class NotificationsApi{
   static final _notifications=FlutterLocalNotificationsPlugin() ;
-  static final onNotifications=BehaviorSubject<String?>() ;
+  static final onNotifications=BehaviorSubject<String>() ;
 
   static Future _notificationDetails() async{
     return NotificationDetails(
@@ -38,9 +38,9 @@ class NotificationsApi{
 
 static Future showNotification({
   int id=0,
-  String? title, 
-  String? body,
-  String? payload,
+  String title, 
+  String body,
+  String payload,
 }) async=>
 _notifications.show(
   id,

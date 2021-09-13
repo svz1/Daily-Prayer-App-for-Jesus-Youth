@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({ Key? key }) : super(key: key);
+  const MyApp({ Key key }) : super(key: key);
 
   @override
   _MyAppState createState() => _MyAppState();
@@ -17,6 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   void initState() {
+    
     // TODO: implement initState
     super.initState();
     NotificationsApi.init() ; 
@@ -25,7 +26,7 @@ class _MyAppState extends State<MyApp> {
 
 void listenNotifications()=>
 NotificationsApi.onNotifications.stream.listen(onclickedNotification);
-void onclickedNotification(String? payload)=>
+void onclickedNotification(String payload)=>
 Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Home()));
   @override
   Widget build(BuildContext context) {
