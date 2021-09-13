@@ -34,7 +34,7 @@ class NotificationsPlugin{
       onDidReceiveLocalNotification: (id,title,body,payload) async{
         ReceivedNotification receivedNotification=ReceivedNotification(id:id,title:'title',body:'body',payload: 'payload') ; 
         didReceivedLocalNotificationSubject.add(receivedNotification) ;  
-      }
+      },
     ) ; 
 
      initializationSettings=initializationSettings(
@@ -119,19 +119,7 @@ class NotificationsPlugin{
        
     }  
 
-    static tz.TZDateTime _scheduleDaily(Time time) {
-      final now=tz.TZDateTime.now(tz.local) ;
-      final scheduledDate=tz.TZDateTime(
-        tz.local,
-        now.year,
-        now.month,
-        now.day,
-        time.hour,time.minute,time.second
-
-      ) ;
-      return scheduledDate.isBefore(now)
-      ? scheduledDate.add(Duration(days: 1)):scheduledDate;
-    }
+    
 
 
 }

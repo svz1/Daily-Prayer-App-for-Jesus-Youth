@@ -1,5 +1,6 @@
 import 'package:dpa/Home.dart';
 import 'package:dpa/local%20notifications.dart';
+import 'package:dpa/trial/LocalNotificationScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -21,7 +22,7 @@ class _landingpageState extends State<landingpage> {
       body: PageView(
         children: [
           Home(),
-          localnotificationscreen()
+         LocalNotificationScreen()
         ],
       ),
     );

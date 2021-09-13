@@ -8,7 +8,8 @@ class localnotificationscreen extends StatefulWidget {
   
 
   @override
-  _localnotificationscreenState createState() => _localnotificationscreenState();
+  _localnotificationscreenState createState() =>
+   _localnotificationscreenState();
 }
 
 class _localnotificationscreenState extends State<localnotificationscreen> {
@@ -16,10 +17,9 @@ class _localnotificationscreenState extends State<localnotificationscreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    notificationsPlugin.
-    setListenerForLowerVersions(onNotificationInLowerVersions) ;
-    notificationsPlugin.setOnNotificationCLick(onNotificationClick) ;
-  }
+  //  notificationsPlugin.setListenerForLowerVersions(onNotificationInLowerVersions) ;
+   notificationsPlugin.setOnNotificationCLick(onNotificationClick) ;
+  } 
   
   @override
   
@@ -47,14 +47,12 @@ class _localnotificationscreenState extends State<localnotificationscreen> {
     );
   }
 
-  onNotificationInLowerVersions(ReceivedNotification receivedNotification) {
-
-  }
+ // onNotificationInLowerVersions(ReceivedNotification receivedNotification) {} 
   onNotificationClick(String payload){
     print('payload $payload') ;
     print("hello") ; 
     Navigator.push(context, MaterialPageRoute(builder: (coontext){
       return secondscreen(payload: payload,) ;
     })) ;
-  }
-}
+  } 
+} 
