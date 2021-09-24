@@ -93,7 +93,7 @@ class NotificationPlugin {
   }
 
   Future<void> showDailyAtTime() async {
-    var time = Time(21, 3, 0);
+    var time = Time(9, 14, 0);
     var androidChannelSpecifics = AndroidNotificationDetails(
       'CHANNEL_ID 4',
       'CHANNEL_NAME 4',

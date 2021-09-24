@@ -1,7 +1,7 @@
 
 
-import 'package:dpa/notficiations%20plugin.dart';
-import 'package:dpa/secondscreen.dart';
+import 'package:dpa/Notification%20trial/notficiations%20plugin.dart';
+import 'package:dpa/Notification%20trial/secondscreen.dart';
 import 'package:flutter/material.dart';
 
 class localnotificationscreen extends StatefulWidget {

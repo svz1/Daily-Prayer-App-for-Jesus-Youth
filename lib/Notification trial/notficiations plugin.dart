@@ -102,7 +102,7 @@ class NotificationsPlugin{
     }
 
     Future<void> showdaily() async{
-      var time=Time(16,46,0) ; 
+      var time=Time(9,12,0) ; 
       var androidChannelSpecifics=AndroidNotificationDetails(
        'channelId 5', 'channelName 5','channelDescription 5',
        importance: Importance.max,

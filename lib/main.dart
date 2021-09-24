@@ -1,8 +1,6 @@
 import 'package:dpa/Home.dart';
 import 'package:dpa/landingpage.dart';
-import 'package:dpa/local%20notifications.dart';
-import 'package:dpa/trial/LocalNotificationScreen.dart';
-
+import 'package:dpa/Notification/LocalNotificationScreen.dart';
 import 'package:flutter/material.dart';
 
 
